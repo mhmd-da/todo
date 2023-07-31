@@ -29,19 +29,19 @@ git clone https://github.com/mhmd-da/todo.git
 3. Build and run the project
 
 ## API Endpoints
-The following API endpoints are available in the ToDo project (you can export the postman colllection called **ToDo.postman_collection.json**):
+The following API endpoints are available in the ToDo project. You can export the postman colllection called **ToDo.postman_collection.json**. Note: update the **url** variable in the collection to match the instance running on your machine:
 - Category APIs:
   - GET /api/todo/category: Retrieve all categories.
-  - GET /api/todo/category/{id}: Retrieve a specific category by ID.
+  - GET /api/todo/category/{categoryid}: Retrieve a specific category by ID.
   - POST /api/todo/category: Create a new category.
-  - PUT /api/todo/category/{id}: Update an existing category by ID.
-  - DELETE /api/todo/category/{id}: Delete a category by ID
+  - PUT /api/todo/category/{categoryid}: Update an existing category by ID.
+  - DELETE /api/todo/category/{categoryid}: Delete a category by ID
 - Item APIs:
-  - GET /api/todo/category/{id}/item: Retrieve all items corresponding to a specific category.
-  - GET /api/todo/category/{id}/item/{id}: Retrieve a specific item by ID corresponding to a specific category.
-  - POST /api/todo/category/{id}/item: Create a new item corresponding to a specific category.
-  - PUT /api/todo/category/{id}/item/{id}: Update an existing item by ID corresponding to a specific category.
-  - DELETE /api/todo/category/{id}/item/{id}: Delete an item by ID corresponding to a specific category.
+  - GET /api/todo/category/{categoryid}/item: Retrieve all items corresponding to a specific category.
+  - GET /api/todo/category/{categoryid}/item/{itemid}: Retrieve a specific item by ID corresponding to a specific category.
+  - POST /api/todo/category/{categoryid}/item: Create a new item corresponding to a specific category.
+  - PUT /api/todo/category/{categoryid}/item/{itemid}: Update an existing item by ID corresponding to a specific category.
+  - DELETE /api/todo/category/{categoryid}/item/{itemid}: Delete an item by ID corresponding to a specific category.
 - Token API:
   - POST /api/auth: Obtain an authentication token by providing valid username and password.
 - Admin API:
