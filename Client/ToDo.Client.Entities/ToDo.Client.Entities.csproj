@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ToDo.Common\ToDo.Common.csproj" />
+    <ProjectReference Include="..\..\Business\ToDo.Business.Entities\ToDo.Business.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

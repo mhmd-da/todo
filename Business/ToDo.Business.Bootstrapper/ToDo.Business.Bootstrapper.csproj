@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.Identity.Mongo" Version="8.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.19" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.19" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Client\ToDo.Client.Entities\ToDo.Client.Entities.csproj" />
+    <ProjectReference Include="..\..\Common\ToDo.Common\ToDo.Common.csproj" />
+    <ProjectReference Include="..\..\Persistence\ToDo.Data.Contracts\ToDo.Data.Contracts.csproj" />
+    <ProjectReference Include="..\..\Persistence\ToDo.Data\ToDo.Data.csproj" />
+    <ProjectReference Include="..\ToDo.Business.Contracts\ToDo.Business.Contracts.csproj" />
+    <ProjectReference Include="..\ToDo.Business\ToDo.Business.csproj" />
+  </ItemGroup>
+
+</Project>

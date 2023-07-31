@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.Identity.Mongo" Version="8.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="6.0.19" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="6.0.19" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Persistence\ToDo.Data.Contracts\ToDo.Data.Contracts.csproj" />
+    <ProjectReference Include="..\ToDo.Business.AutoMapper\ToDo.Business.AutoMapper.csproj" />
+    <ProjectReference Include="..\ToDo.Business.Contracts\ToDo.Business.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
