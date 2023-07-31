@@ -29,7 +29,7 @@ git clone https://github.com/mhmd-da/todo.git
 3. Build and run the project
 
 ## API Endpoints
-The following API endpoints are available in the ToDo project. You can export the postman colllection called **ToDo.postman_collection.json**. Note: update the **url** variable in the collection to match the instance running on your machine:
+The following API endpoints are available in the ToDo project. 
 - Category APIs:
   - GET /api/todo/category: Retrieve all categories.
   - GET /api/todo/category/{categoryid}: Retrieve a specific category by ID.
@@ -46,6 +46,8 @@ The following API endpoints are available in the ToDo project. You can export th
   - POST /api/auth: Obtain an authentication token by providing valid username and password.
 - Admin API:
   - GET /admin: Retrieve all data (all user with all their categories/items lists) with administrative role permissions.
+
+Note: You can import the postman colllection called **ToDo.postman_collection.json** to explore and test the APIs effortlessly. Don't forget to update the **url** variable in the collection to match the instance running on your machine:
 
  ## Categories and Items Relationship
 There is a personalized relationship between categories and items for each user. This means that every user has their own set of categories and items, ensuring that user data remains separate and private. when accessing **Category** or **Item** APIs, the **userId** is fetched from the token, allowing the retrieval of their specific data.
